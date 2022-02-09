@@ -226,9 +226,9 @@ About page styles
   flex-flow: row wrap;
   
  }
- h2 .mission {
-   padding-top: 50x;
- }
+ .contact-content p {
+  margin: 0;
+}
  /*=================================================
  FAQ Page 
  ====================================================*/
@@ -245,7 +245,10 @@ About page styles
   flex-flow: row wrap;
  }
  .faq h2 {
-   margin-top: 50px;
+   margin-top: 20px;
+ }
+ .faq-content {
+   margin: 20px 0;
  }
 
 /* ==========================================================================
