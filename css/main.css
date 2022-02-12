@@ -156,8 +156,8 @@ footer p {
   margin: 0;
 }
 footer {
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
 }
 footer .copyright {
   margin: 10px 0;
@@ -239,10 +239,12 @@ About page styles
   flex-flow: row wrap;
  }
  .faq .content-wrapper {
-   display: flex;
+  margin: 50px 0 0 0;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  
  }
  .faq h2 {
    margin-top: 20px;
@@ -367,6 +369,7 @@ aside .content-wrapper {
   margin: 50px 0;
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
 }
 
 aside .content-wrapper .form-description,
@@ -377,9 +380,12 @@ aside .content-wrapper .form {
 /*****features******/
 .features article{
   width: 50%;
+  display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-flow: row wrap;
   text-align: center;
+  flex-basis: 50%;
 }
 .features .features-item-description {
   width: 50%;
@@ -387,6 +393,7 @@ aside .content-wrapper .form {
 /*** Reviews ***/
 .reviews article{
   display: flex;
+  justify-content: space-around;
 }
 .reviews article div {
   width: 50%;
@@ -402,6 +409,7 @@ footer .content-wrapper{
 .footer-content {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 footer .contact{
@@ -414,6 +422,46 @@ footer .copyright {
   width: 100% ;
 }
 
+/* ==============================================
+   About Page
+   ============================================= */
+ 
+   .mission-content {
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.mission-content p {
+    width: 40%;
+}
+
+.contact-section .content-wrapper h2 {
+    width: 100%;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+}
+
+/*=======================================
+FAQ page
+========================================*/
+.faq h2 {
+  width: 100%;
+}
+.faq .content-wrapper{
+  justify-content: space-between;
+}
+.faq-content{
+  flex-basis: 40%;
+  padding-right: 5px;
+  padding-left: 5px;
+  
+  
+}
 
 
 
