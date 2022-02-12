@@ -88,7 +88,11 @@ textarea {
    ========================================================================== */
 
 .content-wrapper {
-    width: 90%;   
+    width: 90%; 
+    margin: 50px 0;  
+}
+p {
+  display: block;
 }
  /* -----Header and footer for all ----*/
 header,
@@ -341,9 +345,9 @@ About page styles
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px)  {
   /* for screens 768 and higher (tablet) */
-}
+
 .content-wrapper {
   max-width: 640px;
 }
@@ -368,32 +372,32 @@ header nav ul {
 aside .content-wrapper {
   margin: 50px 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: row wrap;
 }
 
 aside .content-wrapper .form-description,
 aside .content-wrapper .form {        
-  width: 50%;        
+  width: 40%;        
   margin: 0;
 }
 /*****features******/
-.features article{
-  width: 50%;
+.features article {
+  
   display: flex;
-  justify-content: space-around;
+  
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   text-align: center;
   flex-basis: 50%;
 }
 .features .features-item-description {
-  width: 50%;
+  width: 62%;
 }
 /*** Reviews ***/
 .reviews article{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .reviews article div {
   width: 50%;
@@ -408,7 +412,7 @@ footer .content-wrapper{
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -426,10 +430,11 @@ footer .copyright {
    About Page
    ============================================= */
  
-   .mission-content {
+.mission-content {
     display:flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items:center;
+    padding-top: 20px;
 }
 
 .mission-content p {
@@ -437,18 +442,21 @@ footer .copyright {
 }
 
 .contact-section .content-wrapper h2 {
-    width: 100%;
+    width: 80%;
 }
 
 .contact-content {
     display: flex;
     justify-content: space-around;
-    align-items: left;
+    align-items: flex-start;
 }
 
 /*=======================================
 FAQ page
 ========================================*/
+header {
+  padding: 15px 0;
+}
 .faq h2 {
   width: 100%;
 }
@@ -462,12 +470,13 @@ FAQ page
   
   
 }
+}
 
 
 
 @media only screen and (min-width: 1200px) {
   /* for screens 1200px and higher (desktop)*/
-}
+
 
 .content-wrapper {
   max-width: 960px;
@@ -480,6 +489,7 @@ FAQ page
 .features .features-item-description {
   width: 40%;
   
+}
 }
 
 /* ==========================================================================
