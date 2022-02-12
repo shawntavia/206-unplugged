@@ -339,15 +339,86 @@ About page styles
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* for screens 768 and higher (tablet) */
+}
+.content-wrapper {
+  max-width: 640px;
+}
+header {
+  justify-content: space-around;
+}
+header .content-wrapper {
+  width: 100%;
+  justify-content: space-between;
+  
+}
+header nav {
+  width: 30%;
+}
+header nav ul {
+  justify-content: space-between;
+}
+.header-divider {
+  display: none;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {        
+  width: 50%;        
+  margin: 0;
+}
+/*****features******/
+.features article{
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.features .features-item-description {
+  width: 50%;
+}
+/*** Reviews ***/
+.reviews article{
+  display: flex;
+}
+.reviews article div {
+  width: 50%;
+}
+
+/*** footer ***/ 
+
+footer .content-wrapper{
+  width: 100%;
+  margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .contact{
+  margin-bottom: 0;
+
+
+}
+
+footer .copyright {
+  width: 100% ;
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+  /* for screens 1200px and higher (desktop)*/
 }
 
 /* ==========================================================================
