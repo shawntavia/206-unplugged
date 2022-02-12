@@ -356,7 +356,7 @@ header .content-wrapper {
   
 }
 header nav {
-  width: 30%;
+  width: 20%;
 }
 header nav ul {
   justify-content: space-between;
@@ -467,6 +467,19 @@ FAQ page
 
 @media only screen and (min-width: 1200px) {
   /* for screens 1200px and higher (desktop)*/
+}
+
+.content-wrapper {
+  max-width: 960px;
+}
+.features article{
+  flex-basis: 33%;
+  padding-right: 2px;
+  padding-left: 1px;
+}
+.features .features-item-description {
+  width: 40%;
+  
 }
 
 /* ==========================================================================
