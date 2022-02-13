@@ -87,7 +87,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /** General Syles **/
+   /** *********General Syles  *******/
+
    html {
      font-size: 16px;
      line-height: 1.4;
@@ -223,6 +224,16 @@ footer .copyright {
   margin: 10px 0;
 }
 /*----Mobile homepage ----*/
+
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  /* align-items: center;*/
+  flex-flow: row wrap;
+}
+
+/* Aside*/
 aside {
   display: flex;
   justify-content: center;
@@ -230,11 +241,32 @@ aside {
   flex-flow: row wrap;
 }
 
-.hero-area {
-  display: flex;
-  justify-content: center;
-  /* align-items: center;*/
-  flex-flow: row wrap;
+
+/*** Aside form (Skillcrush) *****/
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 /*------features----*/
 .features {
@@ -452,7 +484,7 @@ aside .content-wrapper .form {
   text-align: center;
   flex-basis: 50%;
 }
-.features .features-item-description {
+.features .feature-item-description {
   width: 62%;
 }
 /*** Reviews ***/
@@ -538,19 +570,23 @@ header {
 @media only screen and (min-width: 1200px) {
   /* for screens 1200px and higher (desktop)*/
 
+  p{
+    font-size: 1.125em ;
+  }
 
 .content-wrapper {
   max-width: 960px;
+}
+.hero-area h1 {
+  font-size: 3.75em;
+  width: 85%;
 }
 .features article{
   flex-basis: 33%;
   padding-right: 2px;
   padding-left: 1px;
 }
-.features .features-item-description {
-  width: 40%;
-  
-}
+
 /* Reviews */
 .reviews article div {
   width: 42%;
