@@ -213,6 +213,10 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 footer .content-wrapper{
   width: 55%;
@@ -221,6 +225,11 @@ footer .content-wrapper{
 footer .contact {
   margin-bottom: 50px;
   justify-content: center;
+}
+.social-icons i {
+  
+  color: #e2e3ed;  
+  font-size: 1.3em;
 }
 footer p {
   margin: 0;
@@ -588,14 +597,24 @@ footer .content-wrapper {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  
+}
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 12.5em;
   
 }
 
 footer .contact {
   margin-bottom: 0;
+  
 
+}
+footer .social {
+  
 }
 
 footer .copyright {
