@@ -103,6 +103,7 @@ textarea {
      list-style-type: none;
      text-transform: uppercase;
      font-weight: bold;
+     padding: 0;
 
    }
    h1 {
@@ -130,9 +131,13 @@ textarea {
      line-height: 1.125em;
    }
 
-   img {}
+   img {
+     width: 100%;
+   }
 
-   figure {}
+   figure {
+     margin: 0;
+   }
 
    address {
      font-style: normal;
@@ -181,6 +186,8 @@ h1 .hero-area{
   height: 1px;
 }
 header nav {
+  width: 60%;
+  font-size: 1.125em;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -227,12 +234,23 @@ footer .copyright {
 }
 /*----Mobile homepage ----*/
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 
 .hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat rgb(75, 75, 75);
+  background-size: cover;
   display: flex;
   justify-content: center;
   /* align-items: center;*/
   flex-flow: row wrap;
+  min-height: 500px;
 }
 .hero-area h1{
   font-weight: 600;
@@ -276,6 +294,8 @@ input[type=button] {
 }
 /*------features----*/
 .features {
+  background: url('../img/campfire-unsplash.jpg') center no-repeat rgb(75, 75, 75);
+  background-size: cover;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -318,10 +338,11 @@ input[type=button] {
   
 }
 .reviews h3{
-  width: 55%;
+  /*width: 55%;*/
   margin: 20px 0;
   font-weight: 500;
 }
+
 /* ======================= =====================
 About page styles
  ===============================================*/
@@ -472,6 +493,9 @@ h4 {
 header {
   justify-content: space-around;
 }
+header figure {
+  width: 40%;
+}
 header .content-wrapper {
   width: 100%;
   justify-content: space-between;
@@ -489,6 +513,7 @@ header nav ul {
 .hero-area h1 {
   font-size: 3em;
   line-height: 1;
+  min-height: 600px;
 }
 
 aside .content-wrapper {
@@ -523,13 +548,17 @@ aside .content-wrapper .form {
 }
 .reviews h2 {
   width: 80%;
+  font-size: ;
 }
 .reviews h3 {
   width: 75%;
   margin: 0;
 }
 .reviews article div {
-  width: 50%;
+  width: 46%;
+}
+.reviews figure {
+  width: 46%;
 }
 
 /*** footer ***/ 
@@ -630,6 +659,9 @@ header nav ul li {
 .hero-area h1 {
   font-size: 3.75em;
   width: 85%;
+}
+aside .content-wrapper {
+  justify-content: space-around;
 }
 .features h2 {
   width: 90%;
