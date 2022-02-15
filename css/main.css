@@ -102,8 +102,9 @@ textarea {
    ol {
      list-style-type: none;
      text-transform: uppercase;
-     font-weight: bold;
+     font-weight: 700;
      padding: 0;
+     margin: 0;
 
    }
    h1 {
@@ -116,6 +117,8 @@ textarea {
    h2 {
      font-family: 'Poppins',sans-serif;
      font-size: 1.875em;
+     font-weight: 500;
+     margin: 0;
      
    }
 
@@ -123,6 +126,8 @@ textarea {
    h4 {
      font-family: 'Poppins', sans-serif;
      font-size: 1.125em;
+     font-weight: 500;
+     margin: 20px 0;
      
    }
 
@@ -143,8 +148,7 @@ textarea {
      font-style: normal;
    }
 
-   .content-wrapper {}
-
+  
    /* end of gen styles */
 
 .content-wrapper {
@@ -182,8 +186,10 @@ h1 .hero-area{
   width: 90%;
 }
 .header-divider {
-  width: 100%;
+  background: #3a3a3a;
   height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 header nav {
   width: 60%;
@@ -311,7 +317,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 .features h2{
-  margin: 50px 0;
+  margin-bottom: 50px;
   line-height: 1.3;
   font-weight: 500;
 }
@@ -344,14 +350,14 @@ input[type=button] {
 
 }
 .reviews h2 {
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 30px;
   line-height: 1;
   font-weight: 500;
   
 }
 .reviews h3{
-  /*width: 55%;*/
+  width: 55%;
   margin: 20px 0;
   font-weight: 500;
 }
@@ -610,15 +616,10 @@ footer .social-icons {
 
 footer .contact {
   margin-bottom: 0;
-  
-
-}
-footer .social {
-  
 }
 
 footer .copyright {
-  width: 100% ;
+  width: 100%;
 }
 
 /* ==============================================
@@ -632,8 +633,9 @@ footer .copyright {
     padding-top: 20px;
 }
 
+
 .mission-content p {
-    width: 40%;
+    width: 45%;
 }
 .map figure {
   padding-bottom: 45.5%;
@@ -645,7 +647,7 @@ footer .copyright {
 
 .contact-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
@@ -662,8 +664,12 @@ header {
 .faq .content-wrapper{
   justify-content: space-between;
 }
+.faq h4, .faq p {
+  font-size: .875em;
+  line-height: 1.125;
+}
 .faq-content{
-  flex-basis: 40%;
+  flex-basis: 45%;
   padding-right: 5px;
   padding-left: 5px;
   
@@ -721,6 +727,20 @@ aside .content-wrapper {
 ====================================================*/
 .map figure {
   padding-bottom: 37.5%;
+}
+.mission h2, .contact-section .content-wrapper h2 {
+  width: 95%;
+  font-size: 3em;
+}
+/*===================================================
+    FAQ page
+====================================================*/
+.faq h2 {
+  width: 100%;
+  font-size: 3em;
+}
+.faq h4, .faq p {
+  font-size: 1.12em;
 }
 }
 
@@ -798,4 +818,3 @@ aside .content-wrapper {
     page-break-after: avoid;
   }
 }
-
